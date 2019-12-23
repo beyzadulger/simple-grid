@@ -1,0 +1,115 @@
+.head {
+  height: 100px;
+}
+.head > h1 {
+  text-align: center;
+  font-size: 50px;
+  margin-top: 50px;
+}
+.bx1 {
+  background-color: yellow;
+}
+.bx2 {
+  background-color: orange;
+}
+.bx3 {
+  background-color: rgb(64, 255, 47);
+}
+.bx4 {
+  background-color: rgb(128, 0, 96);
+}
+.bx5 {
+  background-color: rgb(1, 1, 167);
+}
+.bx6 {
+  background-color: rgb(190, 247, 255);
+}
+.bx7 {
+  background-color: rgb(177, 177, 177);
+}
+#inbox > p {
+  margin-top: 0px;
+  text-align: center;
+  padding-top: 10%;
+  font-size: 35px;
+}
+.column > p {
+  font-size: 2rem;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+#inbox {
+  /*inbox id olarak olusturuldugu icin # ile tanimladik*/
+  width: 60%;
+  height: 30%;
+  border: 4px solid black;
+  border-top: none;
+  margin-left: 20%;
+}
+
+@media screen and (min-width: 992px) {
+  /*992px den buyuk ekranlar*/
+  .cont-1 {
+    box-sizing: border-box; /*borderin genislik degerine padding ve border degerini katiyor*/
+    display: flex; /*siteyi buyutup kuculturken site yappisinin bozulmasini onler*/
+    flex-direction: row; /*kutulari soldan saga siralar ama olmasa da olur her pcde etkin calismasi icin olusturuldu*/
+    flex-wrap: wrap; /*fazla satirlarda kutulari soldan saga siralar*/
+    justify-content: space-between; /*kutularin sayfa icine esit dagilmasini saglar*/
+    padding: 3% 3% 3% 3%;
+  }
+  .column {
+    width: 31%;
+    height: 50%;
+    border: 4px solid black;
+    margin-bottom: 3%;
+    background: rgb(227, 229, 240);
+  }
+  .last-form {
+    margin-left: 34.2%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .cont-1 {
+    margin: auto;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 3% 3% 3% 3%;
+  }
+  .column {
+    width: 47%;
+    height: 50%;
+    border: 4px solid black;
+    margin-bottom: 4%;
+    background: rgb(227, 229, 240);
+  }
+  .last-form {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .cont-1 {
+    margin: auto;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 4% 4% 4% 4%;
+  }
+  .column {
+    width: 100%;
+    height: 40%;
+    border: 3px solid black;
+    margin-bottom: 5%;
+    background: rgb(227, 229, 240);
+  }
+  #inbox {
+    width: 40%;
+    margin-left: 30%;
+    border: 3px solid black;
+    border-top: none;
+  }
+}
